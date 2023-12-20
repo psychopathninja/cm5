@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Camera App</title>
+</head>
+<body>
+    <h1>Click the button to open the camera app</h1>
+    <button onclick="openCameraApp()">Open Camera App</button>
+
+    <script>
+        function openCameraApp() {
+            // Replace 'your_camera_app_scheme:' with the actual scheme used by the camera app
+            var cameraAppScheme = 'your_camera_app_scheme:';
+            
+            // Construct the URL with the camera app scheme
+            var url = cameraAppScheme + '//' + 'open_camera';
+
+            // Attempt to open the external camera app
+            window.location.href = url;
+        }
+    </script>
+</body>
+</html>
